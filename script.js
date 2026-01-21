@@ -20,32 +20,21 @@ class Person {
 	{
 		return this.age;
 	}
-	class Student{
-		// String name;
-		// int age;
+}
 
-		study()
+class Student extends Person {
+	study()
 		{
 			console.log(`${this.name} is studying`);
 		}
-	}
+}
 
-	class Teacher{
-		String name;
-		int age;
-
-		teach()
+class Teacher extends Person {
+	teach()
 		{
 			console.log(`${name} is teaching`);
 		}
-	}
-
-
 }
-
-class Student extends Person {}
-
-class Teacher extends Person {}
 
 // Do not change the code below this line
 window.Person = Person;
